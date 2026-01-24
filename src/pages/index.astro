@@ -181,7 +181,7 @@ const translations = {
 				const scrolled = window.pageYOffset;
 				document.querySelectorAll('.parallax-section').forEach(section => {
 					const speed = 0.1;
-					(section as HTMLElement).style.transform = `translateY(${scrolled * speed}px)`;
+					section.style.transform = `translateY(${scrolled * speed}px)`;
 				});
 			});
 		});
