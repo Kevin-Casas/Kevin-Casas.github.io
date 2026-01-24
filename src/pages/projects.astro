@@ -9,6 +9,23 @@ const translations = {
 	description: { en: 'A collection of personal projects, from conception to deployment.', es: 'Una colección de proyectos, desde la concepción hasta el despliegue.' },
 	comingSoon: { en: 'Projects are coming', es: 'Los proyectos están por venir' }
 };
+
+const projects = [
+  {
+    title: 'Galeria de Blue Archive',
+    description: 'Galeria de personajes de Blue Archive.',
+    tech: ['Bootstrap', 'JavaScript'],
+    link: 'https://stellular-phoenix-024efe.netlify.app/',
+    github: 'https://github.com/Kevin-Casas/blue-archive-gallery'
+  },
+  {
+    title: 'Persona 3 Reload Material Calculator',
+    description: 'A simple material calculator for the first level of Tartarus where money is hard to find.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Vite'],
+    link: '',
+    github: 'https://github.com/Kevin-Casas/Persona-3-Reload-Material-Calculator'
+  }
+];
 ---
 
 <Layout title={`Projects | Kevin Casas`}>
@@ -26,13 +43,52 @@ const translations = {
 				</p>
 			</div>
 
-			<div class="flex items-center justify-center min-h-[400px] parallax-section">
-				<div class="text-center">
-					<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white animate-pulse" data-en={translations.comingSoon.en} data-es={translations.comingSoon.es}>
-						{translations.comingSoon.en}
-					</h2>
-				</div>
-			</div>
+
+			<div class="grid gap-6 sm:grid-cols-2 parallax-section">
+  {projects.map((project) => (
+    <article class="p-5 rounded-xl border border-gray-200 dark:border-gray-700 hover:scale-[1.02] transition-transform">
+      <h3 class="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white">
+        {project.title}
+      </h3>
+
+      <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+        {project.description}
+      </p>
+
+      <div class="flex flex-wrap gap-2 mt-3">
+        {project.tech.map((tech) => (
+          <span class="text-xs px-2 py-1 rounded bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+            {tech}
+          </span>
+        ))}
+      </div>
+
+      <div class="flex gap-4 mt-4 text-sm font-medium">
+        {project.link && (
+          <a
+            href={project.link}
+            target="_blank"
+            class="text-gray-900 dark:text-white hover:underline"
+          >
+            Live
+          </a>
+        )}
+
+        {project.github && (
+          <a
+            href={project.github}
+            target="_blank"
+            class="text-gray-600 dark:text-gray-400 hover:underline"
+          >
+            GitHub
+          </a>
+        )}
+      </div>
+    </article>
+  ))}
+</div>
+
+
 		</section>
 	</main>
 
