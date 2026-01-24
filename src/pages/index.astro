@@ -10,12 +10,12 @@ const translations = {
     es: "Hola, soy" 
   },
   name: { 
-    en: "Javier Castillo", 
-    es: "Javier Castillo" 
+    en: "Kevin Casas", 
+    es: "Kevin Casas" 
   },
   description: { 
-    en: "Technologist in Information Systems and Full Stack Developer with more than 2 years of experience, specialized in creating modern, scalable and user-centered solutions.", 
-    es: "Tecnólogo en Sistemas de información y Desarrollador Full Stack con más de 2 años de experiencia, especializado en crear soluciones modernas, escalables y centradas en el usuario." 
+    en: "University Technician in Computer Science.", 
+    es: "Técnico Universitario en Informática." 
   },
   availability: {
     en: "Open to work",
@@ -34,8 +34,8 @@ const translations = {
     es: "Sobre mí" 
   },
   aboutDesc: {
-    es: "Soy Desarrollador Full Stack con experiencia en la creación de aplicaciones web completas, desde el diseño de la arquitectura hasta la implementación y despliegue. Trabajo integrando APIs, bases de datos y servicios modernos, con foco en rendimiento, mantenibilidad y experiencia de usuario. Me adapto bien a equipos colaborativos, sigo buenas prácticas de desarrollo y busco entregar soluciones estables que aporten valor real al negocio. Estoy interesado en oportunidades remotas o híbridas donde pueda seguir creciendo profesionalmente y contribuir a proyectos bien estructurados.",
-    en: "I am a Full Stack Developer with experience building end-to-end web applications, from architecture design to implementation and deployment. I work integrating APIs, databases, and modern services, with a focus on performance, maintainability, and user experience. I adapt well to collaborative teams, follow development best practices, and aim to deliver stable solutions that bring real business value. I am interested in remote or hybrid opportunities where I can continue growing professionally and contribute to well-structured projects."
+    es: "Soy Desarrollador Backend con experiencia en APIs y bases de datos. Me adapto bien a equipos colaborativos, sigo buenas prácticas de desarrollo y busco entregar soluciones aporten valor real".
+    en: "I am a Backend Developer with experience working with APIs and databases. I adapt well to collaborative teams, follow development best practices, and aim to deliver stable solutions that bring real value."
   },
   tech: { 
     en: "Tech Stack", 
@@ -45,7 +45,7 @@ const translations = {
 
 ---
 
-<Layout title={`Home | Javier Castillo`}>
+<Layout title={`Home | Kevin Casas`}>
 	<Header />
 	
 	<main class="min-h-screen px-4 sm:px-6 md:px-6">
@@ -53,7 +53,7 @@ const translations = {
 			<div class="flex flex-col items-center gap-6 sm:gap-8 text-center">
 				<div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
 					<div class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full bg-gray-100 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 flex items-center justify-center overflow-hidden animated-border always-visible flex-shrink-0 shadow-lg dark:shadow-white/20">
-						<img src={heroPhoto.src} alt="Javier Castillo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+						<img src={heroPhoto.src} alt="Kevin Casas" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
 						<span class="text-2xl sm:text-3xl md:text-4xl text-gray-500 dark:text-gray-400 hidden">📷</span>
 					</div>
 					<div class="animated-border always-visible px-3 sm:px-4 py-2 rounded-full border border-gray-300 dark:border-gray-600 h-fit">
@@ -106,16 +106,7 @@ const translations = {
 						<p class="text-sm font-medium text-gray-900 dark:text-white">Next.js</p>
 					</div>
 					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
-						<p class="text-sm font-medium text-gray-900 dark:text-white">Astro</p>
-					</div>
-					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
-						<p class="text-sm font-medium text-gray-900 dark:text-white">Tailwind CSS</p>
-					</div>
-					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
 						<p class="text-sm font-medium text-gray-900 dark:text-white">Node.js</p>
-					</div>
-					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
-						<p class="text-sm font-medium text-gray-900 dark:text-white">PostgreSQL</p>
 					</div>
 					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
 						<p class="text-sm font-medium text-gray-900 dark:text-white">MongoDB</p>
@@ -123,37 +114,41 @@ const translations = {
 					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
 						<p class="text-sm font-medium text-gray-900 dark:text-white">Docker</p>
 					</div>
+					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
+						<p class="text-sm font-medium text-gray-900 dark:text-white">Git</p>
+					</div>
+					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
+						<p class="text-sm font-medium text-gray-900 dark:text-white">Github</p>
+					</div>
+					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
+						<p class="text-sm font-medium text-gray-900 dark:text-white">Trello</p>
+					</div>
+					
 					
 					<!-- Second set for seamless looping -->
 					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
 						<p class="text-sm font-medium text-gray-900 dark:text-white">JavaScript</p>
 					</div>
 					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
-						<p class="text-sm font-medium text-gray-900 dark:text-white">TypeScript</p>
-					</div>
-					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
 						<p class="text-sm font-medium text-gray-900 dark:text-white">React</p>
 					</div>
 					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
-						<p class="text-sm font-medium text-gray-900 dark:text-white">Next.js</p>
-					</div>
-					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
-						<p class="text-sm font-medium text-gray-900 dark:text-white">Astro</p>
-					</div>
-					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
-						<p class="text-sm font-medium text-gray-900 dark:text-white">Tailwind CSS</p>
-					</div>
-					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
 						<p class="text-sm font-medium text-gray-900 dark:text-white">Node.js</p>
-					</div>
-					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
-						<p class="text-sm font-medium text-gray-900 dark:text-white">PostgreSQL</p>
 					</div>
 					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
 						<p class="text-sm font-medium text-gray-900 dark:text-white">MongoDB</p>
 					</div>
 					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
 						<p class="text-sm font-medium text-gray-900 dark:text-white">Docker</p>
+					</div>
+					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
+						<p class="text-sm font-medium text-gray-900 dark:text-white">Git</p>
+					</div>
+					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
+						<p class="text-sm font-medium text-gray-900 dark:text-white">Github</p>
+					</div>
+					<div class="cursor-pointer px-4 py-2 rounded-full bg-transparent border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:scale-105 whitespace-nowrap">
+						<p class="text-sm font-medium text-gray-900 dark:text-white">Trello</p>
 					</div>
 				</div>
 			</div>
