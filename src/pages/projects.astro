@@ -6,7 +6,7 @@ import Footer from '../components/Footer.astro';
 const translations = {
 	subtitle: { en: 'Selected Work', es: 'Trabajos Seleccionados' },
 	title: { en: 'Projects', es: 'Proyectos' },
-	description: { en: 'A collection of personal projects, from conception to deployment.', es: 'Una colección de proyectos, desde la concepción hasta el despliegue.' },
+	description: { en: 'A collection of personal projects.', es: 'Una colección de proyectos personales.' },
 	comingSoon: { en: 'Projects are coming', es: 'Los proyectos están por venir' }
 };
 
@@ -24,6 +24,13 @@ const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'Vite'],
     link: '',
     github: 'https://github.com/Kevin-Casas/Persona-3-Reload-Material-Calculator'
+  },
+{
+    title: 'Jugadores en Selecciones',
+    description: 'API for managing Football players data.',
+    tech: ['NestJS', 'TypeORM', 'TypeScript', 'PostgreSQL', 'Swagger'],
+    link: '',
+    github: 'https://github.com/Kevin-Casas/jugadores-en-selecciones'
   }
 ];
 ---
